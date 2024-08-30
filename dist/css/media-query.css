@@ -116,6 +116,7 @@
      grid-template-columns: 1fr;
      row-gap: 1rem;
      place-items: center;
+     width: 120%;
    }
 
    footer > div:nth-child(2) a {
@@ -126,7 +127,6 @@
    }
    .com-video {
     max-width: 85% !important;
-    margin-left: 20%;
    }
    form {
       grid-template-columns: 1fr;
