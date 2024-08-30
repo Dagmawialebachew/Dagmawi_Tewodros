@@ -9,8 +9,6 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-
-
    btn.innerText = 'Sending...';
 
    const serviceID = 'service_ilt0bsa';
@@ -50,7 +48,7 @@ lazyMethod.style.display = 'none'
 function show() {
      menuDiv.classList.toggle ('active')
      const isToggled = menuDiv.classList.contains('active')
-     dropDown.src = isToggled ? 'images/top.png' : 'images/menu.png'
+     dropDown.src = isToggled ? 'dist/icons/top.png' : 'dist/icons/menu.png'
 }
 
 function toggleFun() {
@@ -58,23 +56,12 @@ function toggleFun() {
      dropDown.style.display = 'none'
      lazyMethod.style.display = 'flex'
      const isVisible = nav.classList.contains('nav-active')
-     toggle.src = isVisible ? 'images/slider.png': 'images/toggle.png'
+     toggle.src = isVisible ? 'dist/icons/slider.png': 'dist/icons/toggle.png'
     
 
 
     }
         
-    // // function restartAnimation() {
-    // //   const airplane = document.querySelector('.airplane');
-    // //   airplane.style.animation = 'none'; // Reset animation
-    // //   airplane.offsetHeight; // Trigger reflow to restart animation
-    // //   airplane.style.animation = 'fly 15s linear infinite'; // Reapply animation
-    // // }
-
-
-    // setInterval(restartAnimation, 5000);
-
-
     document.addEventListener('DOMContentLoaded', function() {
       const video = document.getElementById('background-video');
       const project = document.getElementById('project-managment');
