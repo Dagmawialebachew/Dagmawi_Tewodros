@@ -1,0 +1,83 @@
+@import url('style.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+ 
+ body, h1 {
+  font-family: "New Amsterdam", sans-serif !important;
+  margin-bottom: 2% ;
+}
+h1 {
+  color: gray;
+}
+.entire-description {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  margin: 10% 5%;
+  gap: 2rem;
+}
+
+header {
+  font-family: 'Poppins' !important;
+}
+header {
+  display: flex;
+  justify-content: space-between  !important;
+  
+}
+
+nav{
+  margin-right: 0 !important;
+}
+
+.entire-description div p {
+  line-height: 1.5rem;
+  font-family: 'Teko';
+}
+
+.project-main-page{
+    width: 80%;
+    height: 80%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.project-main-page img {
+  width: 100%;
+}
+
+.suggestion-board > p{
+margin-left: 4rem;
+}
+
+.entire-description a {
+  color: aqua !important;
+}
+@media (max-width: 650px) {
+  .project-main-page img {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 990px) {
+  .entire-description {
+    margin-top: 20%;
+  }
+
+  @media (max-width: 800px) {
+    .entire-description{
+      margin-top: 30%;};
+  }
+}
+  @media(max-width: 970px ) {
+      nav {
+        display: flex;
+      }
+      header .logo {
+        font-size: 1.2rem;
+      }
+  }
