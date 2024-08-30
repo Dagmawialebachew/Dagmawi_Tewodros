@@ -157,7 +157,8 @@ form > div:nth-child(2)  {
 
      .rs-pm {
  height: 120px;
- flex-wrap: nowrap;    
+ flex-wrap: nowrap;   
+ justify-content: flex-end
      }
 
      .container {
