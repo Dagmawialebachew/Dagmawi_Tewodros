@@ -94,16 +94,13 @@ function toggleFun() {
       }
 
   
-      // Restart the video when it ends
       video.addEventListener('ended', function() {
           video.currentTime = 0;
           video.play();
       });
   
-      // Initial check
       checkVideoPlayback();
   
-      // Check on scroll and resize
       window.addEventListener('scroll', checkVideoPlayback);
       window.addEventListener('resize', checkVideoPlayback);
   });
