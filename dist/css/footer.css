@@ -1,0 +1,134 @@
+form {
+  grid-template-columns: 70% 30%;  
+  gap: 10%;
+  margin-right: 8%;
+  font-family: "Poppins";
+    
+    
+ }
+
+
+
+ form > div:nth-child(1) {
+    display: grid;
+   grid-template-columns: repeat(2, minmax(10rem, 1fr));
+   align-items: center;
+   margin-block: 2rem;
+   border-right: solid 1px black;
+   padding-inline: 1.5rem;
+   gap: 10% 8%;
+
+ }
+ form > div:nth-child(1) div {
+   min-width: 40%;
+ }
+ form > div:nth-child(2) {
+   display: grid;
+   flex-direction: column;
+   row-gap: 22%;
+   margin-left: -2%;
+   font-family: "Lobster";
+ }
+
+ form ::placeholder {
+   padding-inline: 0vh;
+   padding-top: 2vh;
+   font-family: 'Poppins';
+ }
+
+ form input {
+   border: none;
+   width: 100%;
+   height: 3.5rem;
+   border-radius: 2vh;
+   box-shadow: 0 0 10px black;
+   padding-inline: 5vh;
+   transition: all .3s ease-in-out;
+ }
+ form input:focus, form textarea:focus, form select:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #71c299;
+ }
+
+ form textarea {
+   border: none;
+   width: 100%;
+   border-radius: 2vh;
+   padding-left: 2rem;
+   box-shadow: 0 0 10px black;
+   resize:none;
+   min-height: 100%;
+   max-height: 100px;
+   box-sizing: border-box;
+ }
+
+ form select {
+   border: none;
+   width: 100%;
+   height: 3rem;
+   box-shadow: 0 0 10px black;
+   padding-inline: 5vh;
+   border-radius: 2vh;
+ }
+
+ form img {
+    width: 5vh;
+ }
+ form button {
+    background-color: coral;
+    overflow: hidden;
+    min-width: 50%;
+    height: 10vh;
+    z-index: 100;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+ }
+  form span::before{
+    position: absolute;
+    top:0;
+   transform: translateY(-18vh);
+    left: 0;
+  }
+
+  form span::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top:0;
+   transition: all .3s ease-out;
+   transform: translateY(-18vh);
+   left: 0;
+   background-color: rgb(107, 255, 94);
+   z-index: -1;
+  }
+ form button:hover span::after {
+      transition: all .3s ease-in-out;
+      transform: translateY(0vh);
+ }
+form button:active {
+ background-color:rgb(5, 205, 255);
+  
+}
+ footer div {
+   justify-content: center; 
+   align-items: center;
+   column-gap: 5%;
+ }
+ footer {
+   margin-top: 20rem;
+   position: relative;
+
+ }
+ footer > div:nth-child(2) a {
+    position: absolute;
+    bottom: 1rem;
+    right: 5rem;
+ }
+ footer div:nth-child(2) {
+   justify-content: center;
+ }
+ footer p {
+   text-align: center;
+   margin-top: 2rem;
+ }
