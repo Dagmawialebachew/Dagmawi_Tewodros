@@ -17,7 +17,7 @@ document.onreadystatechange = function () {
             body.style.background = 'var(--primary-color)';
             triggerGsapFunction();
             progressBarAnimator();
-        }, 4000); 
+        }, 5500); 
     }
 };
 
@@ -27,9 +27,10 @@ const updatePulser = (content, delay) => {
     }, delay);
 }
 
-updatePulser('<div><div class="grid"><p>Modern</p><img src="dist/icons/modern.png" alt = "..."></div></div>', 1000);
-updatePulser('<div><div class="grid"><p>Appeling</p><img src="dist/icons/magnet.png "alt = "..."></div></div>', 2000);
-updatePulser('<div><div class="grid"><p>User Friendly</p><img src="dist/icons/user-friendly.png" alt = "..."></div></div>', 3000);
+updatePulser('<div><div class="grid"><p>Modern</p><img src="dist/icons/modern.png" alt = "..."></div></div>', 1500);
+updatePulser('<div><div class="grid"><p>Appeling</p><img src="dist/icons/magnet.png "alt = "..."></div></div>', 2500);
+updatePulser('<div><div class="grid"><p>User Friendly</p><img src="dist/icons/user-friendly.png" alt = "..."></div></div>', 3500);
+updatePulser('<div><div class="grid"><p>Self Based Web Agency</p></div></div>', 4500);
 
 
 
