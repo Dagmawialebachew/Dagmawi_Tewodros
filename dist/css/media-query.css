@@ -159,6 +159,9 @@ form > div:nth-child(2)  {
  height: 120px;
  flex-wrap: nowrap;   
  justify-content: flex-end
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+
      }
 
      .container {
