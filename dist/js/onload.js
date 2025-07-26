@@ -1,39 +1,3 @@
-
-const pulser = document.querySelector('.pulser')
-const wrapper = document.querySelector('.content-wrapper')
-const body  = document.querySelector('body')
-document.onreadystatechange = function () {
-    if (document.readyState !== 'complete') {
-        wrapper.style.display = 'none';
-        body.style.background = 'white';
-        pulser.style.visibility = 'visible';
-    } else {
-        setTimeout(() => {
-            pulser.style.visibility = 'visible';
-        }, 0); 
-        setTimeout(() => {
-            pulser.style.visibility = 'hidden';
-            wrapper.style.display = 'block';
-            body.style.background = 'var(--primary-color)';
-            triggerGsapFunction();
-            progressBarAnimator();
-        }, 5500); 
-    }
-};
-
-const updatePulser = (content, delay) => {
-    setTimeout(() => {
-        pulser.innerHTML = content;
-    }, delay);
-}
-
-updatePulser('<div><div class="grid"><p>Modern</p><img src="dist/icons/modern.png" alt = "..."></div></div>', 1500);
-updatePulser('<div><div class="grid"><p>Appeling</p><img src="dist/icons/magnet.png "alt = "..."></div></div>', 2500);
-updatePulser('<div><div class="grid"><p>User Friendly</p><img src="dist/icons/user-friendly.png" alt = "..."></div></div>', 3500);
-updatePulser('<div><div class="grid"><p>Self Based Web Agency</p></div></div>', 4500);
-
-
-
 //  ---------------------------------------------Trigger The Gsap Animation----------------------------------------//
 
 function triggerGsapFunction() {
@@ -43,19 +7,19 @@ function triggerGsapFunction() {
   
   gsap.from('.slide-in-right', {
       scrollTrigger: {
-          trigger: '.slide-in-right',
+          trigger: '#home',
           start: 'top bottom',
           toggleActions: 'play none none complete'
       },
       opacity: 0,
       x: 200,
-      duration: 1.5
+      duration: 3
   });
   
   
-  gsap.from('.slide-in-left', {
+  gsap.from('.slide-in-left, .logo', {
       scrollTrigger: {
-          trigger: '.slide-in-left',
+          trigger: '#home',
           start: 'top bottom',
           toggleActions: 'play none none none'
       },
@@ -64,15 +28,15 @@ function triggerGsapFunction() {
       duration: 1.5
   });
   
-  gsap.from('.div-services', {
+  gsap.from('#my-service', {
       scrollTrigger: {
-          trigger: '.div-services',
+          trigger: '#my-service',
           start: 'top 80%',
-          toggleActions: 'play none none complete',
+          toggleActions: 'play none none complete'
       },
       opacity: 0,
-      duration: 5,
-      x: -50,
+      duration: 2,
+      scale:0.8,
       stagger: 0.3,
   });
   
@@ -80,25 +44,53 @@ function triggerGsapFunction() {
       scrollTrigger: {
           trigger: '.box',
           start: 'top 80%',
-          toggleActions: 'play none none none'
+          toggleActions: 'play none none complete'
+      },
+      y: 100,
+      opacity: 0,
+      duration: 2,
+      stagger: 0.3,
+  });
+
+
+   gsap.from('#about h1', {
+      scrollTrigger: {
+          trigger: '#about h1',
+          start: 'top 80%',
+          toggleActions: 'play none none complete'
+      },
+      x: -100,
+      opacity: 0,
+      duration: 2,
+      stagger: 0.3,
+  });
+
+   gsap.from('#about p, #about button', {
+      scrollTrigger: {
+          trigger: '#about p',
+          start: 'top 80%',
+          toggleActions: 'play none none complete'
       },
       x: 0,
       opacity: 0,
-      duration: 0.5,
-      stagger: 0.3
+      duration: 2,
+      stagger: 0.3,
   });
   
   gsap.from('#home p, #home h1, #home button', {
       scrollTrigger: {
           trigger: '#home',
           start: 'top 80%',
-          toggleActions: 'play none none none'
+          toggleActions: 'play none none complete.'
       },
       x: 0,
       opacity: 0,
       duration: 1.5,
       stagger: 0.5
   });
+
+
+
   
   gsap.from('#project-managment', {
       scrollTrigger: {
@@ -131,7 +123,7 @@ function triggerGsapFunction() {
       },
       scale: 0.7,
       opacity: 0,
-      duration: 2.5,
+      duration: 1.5,
       stagger: 0.2
   });
   
@@ -154,21 +146,14 @@ function triggerGsapFunction() {
               start: 'top 80%',
               toggleActions: 'play none none none'
           },
-          y: 100,
+          y: 50,
           opacity: 0,
           duration: 1.5,
           stagger: 0.2
       });
   });
   
-  document.querySelectorAll('.div-services div').forEach(hover => {
-      hover.addEventListener('mouseenter', () => {
-          gsap.to(hover, { scale: 1.05, duration: 0.3, ease: "power1.inOut" });
-      });
-      hover.addEventListener('mouseleave', () => {
-          gsap.to(hover, { scale: 1, duration: 0.4, ease: "power1.inOut" });
-      });
-  });
+
 
 }
 

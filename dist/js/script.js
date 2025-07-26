@@ -25,18 +25,7 @@ document.getElementById('form')
 });
     
 
-        function checkWidth() {
-            const div = document.getElementById('cardDiv');
-            if (window.innerWidth <= 988) {
-                div.style.display = 'none'
-            } else {
-                div.style.display = 'flex'
-
-            }
-        } 
-
-        window.addEventListener('resize', checkWidth);
-  window.addEventListener('load', checkWidth);
+    
 
 menu = document.getElementById('menu')
 menuDiv = document.getElementById('menu-div')
@@ -44,66 +33,77 @@ dropDown = document.getElementById('drop-down')
 toggle = document.getElementById('toggle')
 nav = document.getElementById('nav')
 lazyMethod = document.getElementById('lazy')
-lazyMethod.style.display = 'none'
 function show() {
-     menuDiv.classList.toggle ('active')
-     const isToggled = menuDiv.classList.contains('active')
+     menuDiv.classList.toggle ('hidden')
+     const isToggled = menuDiv.classList.contains('hidden')
      dropDown.src = isToggled ? 'dist/icons/top.png' : 'dist/icons/menu.png'
 }
 
 function toggleFun() {
-     nav.classList.toggle('nav-active');
-     dropDown.style.display = 'none'
-     lazyMethod.style.display = 'flex'
-     const isVisible = nav.classList.contains('nav-active')
-     toggle.src = isVisible ? 'dist/icons/slider.png': 'dist/icons/toggle.png'
+  nav.classList.toggle('max-nb:hidden');
+
+  dropDown.style.display = 'none';
+
+  lazyMethod.style.display = 'flex'
+
+  const isVisible = !nav.classList.contains('max-nb:hidden');
+  toggle.src = isVisible ? 'dist/icons/slider.png' : 'dist/icons/toggle.png'
+
+
     
 
 
     }
         
-    document.addEventListener('DOMContentLoaded', function() {
-      const video = document.getElementById('background-video');
-      const project = document.getElementById('project-managment');
+  //   document.addEventListener('DOMContentLoaded', function() {
+  //     const video = document.getElementById('background-video');
+  //     const project = document.getElementById('project-managment');
   
-      if (!video || !project) {
-          console.error('Required elements not found.');
-          return;
-      }
+  //     if (!video || !project) {
+  //         console.error('Required elements not found.');
+  //         return;
+  //     }
   
-      function isElementInViewport(el) {
-          const rect = el.getBoundingClientRect();
-          return (
-              rect.top >= 0 &&
-              rect.left >= 0 &&
-              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-          );
-      }
+  //     function isElementInViewport(el) {
+  //         const rect = el.getBoundingClientRect();
+  //         return (
+  //             rect.top >= 0 &&
+  //             rect.left >= 0 &&
+  //             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+  //             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  //         );
+  //     }
   
-      function checkVideoPlayback() {
-          if (isElementInViewport(project)) {
-              video.style.display = 'block';
-              if (video.paused) {
-                  video.play();
-              }
-          } else {
-              video.style.display = 'block';
+  //     function checkVideoPlayback() {
+  //         if (isElementInViewport(project)) {
+  //             video.style.display = 'block';
+  //             if (video.paused) {
+  //                 video.play();
+  //             }
+  //         } else {
+  //             video.style.display = 'block';
              
-          }
-      }
+  //         }
+  //     }
 
   
-      video.addEventListener('ended', function() {
-          video.currentTime = 0;
-          video.play();
-      });
+  //     video.addEventListener('ended', function() {
+  //         video.currentTime = 0;
+  //         video.play();
+  //     });
   
-      checkVideoPlayback();
+  //     checkVideoPlayback();
   
-      window.addEventListener('scroll', checkVideoPlayback);
-      window.addEventListener('resize', checkVideoPlayback);
-  });
+  //     window.addEventListener('scroll', checkVideoPlayback);
+  //     window.addEventListener('resize', checkVideoPlayback);
+  // });
 
   
+
+document.addEventListener("DOMContentLoaded", function () {
+  triggerGsapFunction();
+  progressBarAnimator();
+});
+
+
 

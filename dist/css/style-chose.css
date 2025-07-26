@@ -1,0 +1,235 @@
+
+.left-section-button, .read-more, form button {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+  }
+
+  body {
+    scroll-behavior: smooth;
+  }
+
+  .left-section-button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #79f3f3;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  .left-section-button::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #000000, #37e7ad, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .10s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+
+
+  .left-section-button:hover::before {
+  opacity: 1;
+}
+
+
+
+.stroke-text {
+  -webkit-text-stroke: 0.125em transparent;
+}
+
+
+.left-section-button:active:after {
+  background: transparent;
+}
+
+.left-section-button:active {
+  color: #000;
+  font-weight: bold;
+}
+
+section p .span::before{
+   content: "A Front-End Dev";
+   animation: words 20s infinite;
+   font-family: "Kanit";
+   color: #1e8fff;
+   font: bold;
+   font-size: 28px;
+ }
+
+ #about h1::before {
+    bottom: 0;
+    content: '';
+    width: 100px;
+    height: 8%;
+    border: none;
+    border-radius: 2rem;
+    position: absolute;
+    background: linear-gradient(to right, #00e2ff, #f08080);
+    z-index: 1000;
+}
+
+ section p .span::after  {
+   content: "";
+   background-color: #e0f7fa;
+   position: absolute;
+   height: 33px;
+   left: 0rem;
+   border-left: 3px solid transparent;
+   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+ }
+
+  section p .span {
+    position: relative;
+    background-color: transparent;
+  }
+
+
+
+   @keyframes words {
+   0%,
+   20% {
+        content: "A Web Developer";
+  
+   }
+  
+   21%,
+   40% {
+        content: 'A SEO Specialist';
+  
+   }
+  
+   41%,
+   60%
+    {
+        content: "A Front-End Dev";
+  
+    }
+    61%,
+    80% {
+        content: "A Web Designer.";
+    }
+  81%, 
+  100% {
+        content: "Expert typist";     
+  }
+    
+  
+  
+   }
+
+
+     @keyframes typing  {
+  
+       10%,
+       15%,
+       30%,
+       35%,
+       50%,
+       55%,
+       70%,
+       75%,
+       90%,
+       95% {
+            width: 0;
+       }
+  
+       5%,
+       20%,
+       25%,
+       40%,
+       45%,
+       60%,
+       65%,
+       80%, 
+       85% {
+            width: calc(100% + 8px);
+       }
+   }
+
+
+    @keyframes cursor {
+   to {
+        border-left: 2px solid rgb(165, 165, 165);
+   }
+  
+  }
+  
+       
+   
+
+
+
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+
+.progress-ring {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.progress-ring svg {
+    transform: rotate(-90deg);
+}
+
+.progress-ring circle {
+    fill: none;
+    stroke-width: 10;
+}
+
+.progress-ring .background {
+    stroke: #e0e0e0;
+}
+
+.progress-ring .progress {
+    stroke:#44b9f7;
+    stroke-dasharray: 324; /* Circumference of the circle (2 * Math.PI * radius) */
+    stroke-dashoffset: 324; /* Start with full circumference */
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 32px;
+    color: #333;
+}
+
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; 
+    height: 150px;
+}

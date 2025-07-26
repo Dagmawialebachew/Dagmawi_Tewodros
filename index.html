@@ -1,108 +1,265 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dagmawi Tewodros</title>
-  <link rel="stylesheet" href="dist/css/style.css">
-   <link rel="stylesheet" href="dist/css/media-query.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png"  href="dist/icons/title.png">
-
-</head>
-<body>
-  <div class="pulser">
-    <div>
-    <div class="grid"><p>Fast</p><img src="dist/icons/rush.png"></div>
-  </div>
-  </div>
-
-  <div class="content-wrapper">
-
- <header id="header" class="flex">
-  <div class="logo .typing" id="logo">Dagmawi.</div>
-        <nav id="nav">
-           <div><a href="#home">Home</a></div> 
-           <div id="lazy"><a href="#about">About</a></div>  
-           <div id="lazy"><a href="#my-service">Service I offer</a></div> 
-           <div><a href="#project-managment">Project Managment</a></div> 
-           <div><a href="#pricing">Pricing</a></div> 
-           <div id="menu"><a href="#My-projects">My works</a><img id="drop-down" onclick="show()" src="dist/icons/menu.png"></div> 
-           <div class="contact-me"><a href="#contact-me">Contact me</a></div> 
-           <div class="menu-div" id="menu-div">
-            <div><a href="#about">About</a></div>  
-            <div><a href="#my-service">Service I offer</a></div> 
-            </div>
-        </nav>
+    <!-- <link rel="stylesheet" href="dist/css/style.css"> -->
+    <link rel="stylesheet" href="dist/css/output.css" />
+    <!-- <link rel="stylesheet" href="dist/css/media-query.css"> -->
+    <link
+      rel="stylesheet"
+      type="css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+      
+    
   
-  </header> 
+    <link rel="stylesheet" href="dist/css/style-chose.css" />
+  </head>
+  <body id="body" class="bg-white overflow-x-hidden oveflow-y-auto font-poppins mx-auto scroll-smooth">
+    
 
-  <div  class="toggle"><img onclick="toggleFun()" id="toggle"  src="dist/icons/toggle.png"></div>
-
-<section id="home" class="flex">
-    <div class = "left-section">
-        <h1>  <span>Welcome</span> to my Portfolio.</h1>
-        <p class = "greeting-section"> Hey, there <img  src="dist/icons/hello.png">  I'm <span style="font-weight: bold;">Dagmawi</span> , <span id="span" class="span"></span></p>
-        <p class = "info-section">As an aspiring software engineer and  tech entrepreneur, I am creating innovative solutions and improving existing technologies. I specialize in developing efficient and user-friendly web applications. Explore my portfolio to see my journey and projects that reflect my dedication and commitment.</p>
-        <button class="left-section-button"><a href="dist/doc/Dagmawi Tewodros.pdf" target="_blank">Download CV</a></button>
-     </div>
-           <div class = "right-section">
-            <img src="dist/images/personal-image.png">
-            </div>
-</section>
-
-<section id="about" class="grid">
-    <div class="left-section-2  flex slide-in-left">
-      <img  src="dist/images/image-2.png" alt="">
-    </div>
-    <div class="right-section-2 slide-in-right">
-            <h1 style="margin-bottom: 2vh;">About <span style="font-family: 'Kanit';
-              font-weight: bold;
-              color: #1e8fff">Me</span></h1>
-            <p>I'm an aspiring software engineer from Ethiopia with a deep passion and curiosity for the world of technology. My dedication, consistency, and perseverance  drive me toward my dreams. I  have secured various awards and grants due to my strengths and adherence to the principle of "working smart not working harder" . 
-              <br>
-              I specialize in creating captivating, user-friendly, and problem solving websites. As an innovative solution maker, I have built some websites that address the current issues.</p>
-              <a href="About.html"  class="read-more">Read-more</a>
-    </div>
-   </section>
-
-
-   <section id="my-service" class="my-service">
-     <h1><span style="color: teal">Services </span><span style="color: lightcoral;">I offer</span> </h1>
-       <div class="div-services grid">
-              <div>
-                 <img  src="dist/icons/web-development.png">
-              <h2>Web Development</h2>
-              <p>
-                I develop websites that look great and function properly on all devices, ensuring  user experience whether audience is on a desktop, tablet, or smartphone.
-              </p>
-              </div>
-              <div>
-                <img  src="dist/icons/seo.png">
-              <h2>SEO Optimization</h2>
-              <p>I implement best practices for search engine optimization (SEO) to help website rank higher in search results, attract more visitors, and increase online visibility.</p>
-              </div>
-                <div>
-                 <img   src="dist/icons/ul-ux.png">
-                 <h2>UL/UX Designing</h2>
-              <p>I create intuitive and visually appealing user interfaces, ensuring a seamless user experience across all devices and platforms.</p>
-              </div>
-  
+    <div class="content-wrapper mt-10">
+      <header
+        id="header"
+        class="flex bg-white flex-row justify-between w-full items-center justify px-8 max-md:px-4 py-4 max-nb:fixed top-0 shadow-sm fixed z-[1000]"
+      >
+        <div
+          class="logo .typing text-4xl max-sm:text-3xl tracking-tight hover:tracking-widest transition-all duration-1000 cursor-pointer font-lobster"
+          id="logo"
+        >
+          Dagmawi.
         </div>
-   </section>
 
-   <section id="project-managment">
-    <h1 style="margin-bottom: 8vh;">Project Management</h1>
-      <div class="div-project-management grid margin ">
-            <video id="background-video" autoplay loop muted>
+        <nav
+          id="nav"
+          class="flex  flex-row gap-4 pr-4 max-nb:hidden max-nb:flex-col max-nb:items-center max-nb max-nb:bg-white max-nb:right-0 max-nb:rounded-lg max-nb:p-4 max-nb:min-w-[250px] max-nb:absolute max-nb:w-full max-nb:top-16 max-nb:z-[100]  text-md"
+        >
+          <div>
+            <a
+              class="hover:text-coral-red text-shadow transition duration-300"
+              href="#home"
+              >Home</a
+            >
+          </div>
+          <div id="lazy" class="hidden max-nb:block">
+            <a
+              class="hover:text-coral-red text-shadow transition duration-300"
+              href="#about"
+              >About</a
+            >
+          </div>
+          <div id="lazy" class="hidden max-nb:block">
+            <a
+              class="hover:text-coral-red text-shadow transition duration-300"
+              href="#my-service"
+              >Service I offer</a
+            >
+          </div>
+          <div id="menu" class="flex gap-2 cursor-pointer">
+            <a
+              class="hover:text-coral-red text-shadow transition duration-300"
+              href="#My-projects"
+              >My works</a
+            ><img
+              class="w-[25px] cursor-pointer max-nb:hidden"
+              id="drop-down"
+              onclick="show()"
+              src="dist/icons/menu.png"
+            />
+          </div>
+
+          <div>
+            <a
+              class="hover:text-coral-red text-shadow transition duration-300"
+              href="#pricing"
+              >Pricing</a
+            >
+          </div>
+          <div
+            class="contact-me cursor-pointer bg-gradient-to-tr from-[#79f3f3] to-white hover:bg-white rounded-lg px-2 focus:ring-2 focus:ring-coral-red hover:scale-105 transition duration-10000 ease-in-out"
+          >
+            <a class="text-shadow transition duration-300" href="#contact-me"
+              >Contact me</a
+            >
+          </div>
+          <div
+            class="menu-div hidden absolute bg-white border-blue-300 border top-16 p-5 rounded-md"
+            id="menu-div"
+          >
+            <div>
+              <a
+                class="hover:text-coral-red text-shadow transition duration-300"
+                href="#about"
+                >About</a
+              >
+            </div>
+            <div>
+              <a
+                class="hover:text-coral-red text-shadow transition duration-300"
+                href="#my-service"
+                >Service I offer</a
+              >
+            </div>
+            <div>
+              <a
+                class="hover:text-coral-red text-shadow transition duration-300"
+                href="#project-managment"
+                >Project Managment</a
+              >
+            </div>
+          </div>
+        </nav>
+
+         <div
+      class="toggle z-10 nb:hidden absolute right-16 max-sm:top-5 max-sm:right-8"
+    >
+      <img
+        class="w-[70px] max-sm:w-[34px]"
+        onclick="toggleFun()"
+        id="toggle"
+        src="dist/icons/toggle.png"
+      />
+    </div>
+      </header>
+
+      <!-- Home section -->
+
+      <section
+        id="home"
+        class="flex font-poppins bg-primary  mt-52 max-nb:mt-32  px-10 py-10 flex-row justify-between max-md:flex-col max-md:gap-16 scroll-mt-52 max-nb:scroll-mt-[50rem] "
+      >
+        <div class="left-section flex flex-col gap-4">
+          <h1 class="text-4xl max-sm:text-3xl font-montserrat">
+            <span class="font-montserrat font-bold tracking-wider bg-gradient-to-r from-[#efb161] to-[#00e2ff] text-primary  bg-clip-text stroke-text">Welcome</span> to my Portfolio.
+          </h1>
+          <p class="greeting-section text-2xl">
+            Hey, there
+            <img
+              width="40"
+              height="40"
+              class="inline"
+              src="dist/icons/hello.png"
+            />
+            <span class="block mt-5">
+              I'm <span style="font-weight: bold" class="">Dagmawi</span> ,
+              <span id="span" class="span max-sm:block mt-2"></span>
+            </span>
+          </p>
+          <p class="info-section  text-lg max-sm:text-sm text-slate-gray tracking-wider">
+            As an aspiring software engineer and tech entrepreneur, I am
+            creating innovative solutions and improving existing technologies. I
+            specialize in developing efficient and user-friendly web
+            applications. Explore my portfolio to see my journey and projects
+            that reflect my dedication and commitment.
+          </p>
+          <button class="left-section-button max-w-80 max-md:max-w-60">
+            <a href="dist/doc/Dagmawi Tewodros.pdf" target="_blank"
+              >Download CV</a
+            >
+          </button>
+        </div>
+        <div class="right-section slide-in-right flex justify-center items-center">
+          <img
+            class="object-contain max-w-[400px] max-lg:max-w-[300px]"
+            src="dist/images/personal-image.png"
+          />
+        </div>
+      </section>
+
+      <!-- About me  -->
+
+      <section
+        id="about"
+        class="flex bg-white mt-32 lg:mt-24 px-10 py-10 flex-col gap-16 scroll-mt-32 max-nb:scroll-mt-80"
+      >
+        <div class="abt-me-sec">
+          <h1 class="text-4xl max-sm:text-3xl  relative  font-montserrat font-semibold z-0">
+            About
+            <span class="font-kanit font-bold text-baseline"
+
+              >Me</span
+            >
+          </h1>
+
+          </div>
+
+          <div>
+          <p class="text-balance" style="line-height: 1.6em;">
+            I'm an aspiring software engineer from Ethiopia with a deep passion
+            and curiosity for the world of technology. <br>My dedication,
+            consistency, and perseverance drive me toward my dreams. I have
+            secured various awards and grants due to my strengths and adherence
+            to the principle of "working smart not working harder".
+            <br>
+            I specialize in creating captivating, user-friendly, and problem
+            solving websites. As an innovative solution maker, I have built some
+            websites that address the current issues.
+          </p>
+
+          </div>
+          <div>      
+            <button class="bg-button read-more w-[250px] ">            
+              <a href="About.html">Read-more</a>
+</button>    
+          </div>
+        </div>
+      </section>
+
+      <!-- My-service section -->
+
+     
+  <section
+        id="my-service" 
+        class="  mt-32 lg:mt-24 bg-gray-50 px-10 py-10 flex-row justify-between max-md:flex-col max-md:gap-16 scroll-mt-32 max-nb:scroll-mt-80"
+      >        <h1 class="text-4xl max-sm:text-3xl text-start mb-8 font-bold">
+          <span class="text-teal-500">Services </span
+          ><span class="text-coral-red">I offer</span>
+        </h1>
+
+        <div class="div-service mb-10 grid grid-cols-3 max-md:grid-cols-1 place-content-center place-items-center items-center gap-6">
+          <div class="div-services flex flex-col items-center justify-center  bg-[#7cffff36] shadow-md max-w-[385px] p-6 cursor-pointer hover:scale-105 transition-all duration-500 rounded-xl border-coral-red border max-h-fit">
+            <img class="max-w-[100px]" src="dist/icons/web-development.png"/>
+            <h2 class="text-lg font-bold mb-2 font-montserrat">Web Development</h2>
+            <p>
+              I develop websites that look great and function properly on all
+              devices, ensuring user experience whether audience is on a
+              desktop, tablet, or smartphone.
+            </p>
+          </div>
+          <div class="div-services flex flex-col items-center justify-center  bg-[#7cffff36] shadow-md max-w-[385px] p-6 cursor-pointer hover:scale-105 transition-all duration-500 rounded-xl border-coral-red border max-h-fit">
+            <img class="max-w-[100px]" src="dist/icons/seo.png"/>
+            <h2 class="text-lg font-bold mb-2 font-montserrat">SEO Optimization</h2>
+            <p>
+              I implement best practices for search engine optimization (SEO) to
+              help website rank higher in search results, attract more visitors,
+              and increase online visibility.
+            </p>
+          </div>
+          <div class="div-services flex flex-col items-center justify-center  bg-[#7cffff36] shadow-md max-w-[385px] p-6 cursor-pointer hover:scale-105 transition-all duration-500 rounded-xl border-coral-red border max-h-fit">
+            <img class="max-w-[100px]" src="dist/icons/ul-ux.png" />
+            <h2 class="text-lg font-bold mb-2 font-montserrat">UL/UX Designing</h2>
+            <p>
+              I create intuitive and visually appealing user interfaces,
+              ensuring a seamless user experience across all devices, browsers and
+              platforms.
+            </p>
+          </div>
+        </div>
+      </section>
+
+  <section
+        id="project-managment"
+        class=" mt-32 lg:mt-24 px-10 bg-gray-100 py-10 max-md:flex-col scroll-mt-32 max-nb:scroll-mt-80"
+      >    <h1 class="text-4xl max-sm:text-3xl mb-16 font-montserrat font-bold">Project Management</h1>
+      <div class="div-project-management flex flex-row max-md:flex-col items-center justify-around space-y-6">
+            <video id="background-video" class="w-[530px] max-lg:w-[280px] shadow-md rounded-xl" autoplay loop muted>
               <source src="dist/video/airplane.mp4" type="video/mp4">
               browser does not support the video tag.
           </video>
-        <div class="rs-pm flex">
-       <div class="skill-item flex">
+        <div class="rs-pm grid grid-cols-3 max-md:grid-cols-2 place-content-center max-sm:grid-cols-1 max-sm:gap-4">
+       <div class="skill-item">
         <div class="progress-ring" data-percent="95">
             <svg width="150" height="150">
                 <circle class="background" cx="0" cy="0" r="0"></circle>
@@ -134,93 +291,186 @@
         </div>
         <p>Minification</p>
     </div>
-   
-
-  
-  <div id="cardDiv" style="overflow: hidden;">
-    <h2>Fast Website Delivery.</h2>
-    <p>Need website deployed quickly? I specialize in delivering high-quality websites.</p>
-  </div>
-    </div>            
+           
           </div>
-      <div class="div-project-management div-2-pm grid">
+  </div> 
+  <div id="cardDiv" class="ml-10 mt-14" >
+    <h1 class="font-poppins text-2xl">Fast Website Delivery.</h2>
+    <p class="font-palanquin text-xl text-slate-gray">Need website deployed quickly? I specialize in delivering high-quality websites.</p>
+  </div>
+  
+    
+      <!-- <div class="div-project-management">
             <video id="background-video" class="com-video" autoplay loop muted>
               <source  src="dist/video/communication.mp4" type="video/mp4">
               browser does not support the video tag      
           </video> 
-          <div style="grid-area: b;">
+          <div>
           <h2 style="margin-right: -2rem;">Continuous Communication</h2>
           <p>To make sure website address needs, we need to communicate continuously throughout the process. I’m here to keep the conversation open and make sure needs addressed properly.</p>
           <p>My goal is to maintain clear and consistent communication throughout the project, ensuring you're always informed and involved.</p>
         </div>
-     </div>
+     </div> -->
    </section>
 
-   <section id="My-projects">
-    <p>My works</p>
-    <h1>Explore My projects</h1>
-    <div class="container grid">
-      <div class="box flex">
-        <div class="overlay flex">
-          <p>Hotel Website</p>
-          <a href="Hotel.html"><img src="dist/icons/go-to.png"></a>  
+
+
+      <section 
+      id="My-projects" 
+      class="flex mt-32 lg:mt-24 font-poppins bg-white  px-10 py-10 flex-col justify-around items-center gap-8 scroll-mt-32 max-nb:scroll-mt-80"
+      ">
+        <p class="text-slate-gray font-poppins text-xl">My works</p>
+        <h1 class="font-montserrat font-bold text-4xl max-md:text-3xl max-sm:text-2xl">Explore My projects</h1>
+
+        <div class="container px-10 max-md:px-6 grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 max-md:gap-4 space-y-10 ">
+
+          <div class="box relative w-full max-w-[400px] h-64 max-sm:h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
+          <div 
+            class="absolute inset-0 bg-hotel bg-contain bg-no-repeat bg-white bg-center transition-opacity duration-1000 group-hover:opacity-0">
+          </div>
+
+          <div class="absolute inset-0 bg-baseline bg-opacity-90 opacity-0 group-hover:opacity-100 transition duration-1000 flex flex-col items-center justify-center text-white text-center px-4">
+            <h2 class="text-2xl font-semibold mb-4 drop-shadow-md">Hotel Website</h2>
+            <button class="bg-white text-blue-700 font-bold py-2 px-5 rounded-full hover:bg-blue-100 transition">
+                      <a href="Hotel.html">View</a>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="box">
-        <div class="overlay flex">
-          <p>Educational Website</p>
 
-          <a href="Learniverse.html"><img src="dist/icons/go-to.png"></a>  
+         <div class="box relative w-full max-w-sm h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
+          <div 
+            class="absolute inset-0 bg-educational bg-contain bg-no-repeat bg-white bg-center transition-opacity duration-1000 group-hover:opacity-0">
+          </div>
+
+          <div class="absolute inset-0 bg-baseline bg-opacity-90 opacity-0 group-hover:opacity-100 transition duration-1000 flex flex-col items-center justify-center text-white text-center px-4">
+            <h2 class="text-2xl font-semibold mb-4 drop-shadow-md">Education Website</h2>
+            <button class="bg-white text-blue-700 font-bold py-2 px-5 rounded-full hover:bg-blue-100 transition">
+                      <a href="Learniverse.html">View</a>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="box">
-        <div class="overlay flex">
-          <p>Trading Website</p>
 
-          <a href="Ethio-visionary.html"><img src="dist/icons/go-to.png"></a>  
+
+
+             <div class="box relative w-full max-w-sm h-64 max-sm:h-96 rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
+          <div 
+            class="absolute inset-0 bg-ev_2 bg-cover bg-no-repeat bg-white bg-center transition-opacity duration-1000 group-hover:opacity-0">
+          </div>
+
+          <div class="absolute inset-0 bg-baseline bg-opacity-90 opacity-0 group-hover:opacity-100 transition duration-1000 flex flex-col items-center justify-center text-white text-center px-4">
+            <h2 class="text-2xl font-semibold mb-4 drop-shadow-md">Trading Website</h2>
+            <button class="bg-white text-blue-700 font-bold py-2 px-5 rounded-full hover:bg-blue-100 transition">
+                      <a href="Ethio-visionary.html">View</a>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="box">
-        <div class="overlay flex">
-          <p>Child Care Website</p>
+                
+  
 
-          <a href="Child-care.html"><img src="dist/icons/go-to.png"></a>                    
+             <div class="box relative w-full max-w-sm h-96 max-sm:h-96 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+          <div 
+            class="absolute inset-0 bg-child_care bg-contain bg-no-repeat bg-white bg-center transition-opacity duration-1000 group-hover:opacity-0">
+          </div>
+
+          <div class="absolute inset-0 bg-baseline bg-opacity-90 opacity-0 group-hover:opacity-100 transition duration-1000 flex flex-col items-center justify-center text-white text-center px-4">
+            <h2 class="text-2xl font-semibold mb-4 drop-shadow-md">Child Care Website</h2>
+            <button class="bg-white text-blue-700 font-bold py-2 px-5 rounded-full hover:bg-blue-100 transition">
+                      <a href="Child-care.html">View</a>
+            </button>
+          </div>
         </div>
-      </div>
-     
-  </div>
 
+          <div class="box relative w-full max-w-sm h-64 max-sm:h-96 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+          <div 
+            class="absolute inset-0 bg-gymnify bg-contain bg-no-repeat bg-white bg-center transition-opacity duration-1000 group-hover:opacity-0">
+          </div>
 
-   </section>
+          <div class="absolute inset-0 bg-baseline bg-opacity-90 opacity-0 group-hover:opacity-100 transition duration-1000 flex flex-col items-center justify-center text-white text-center px-4">
+            <h2 class="text-2xl font-semibold mb-4 drop-shadow-md">Gymnify -- Gym Managment System</h2>
+            <button class="bg-white text-blue-700 font-bold py-2 px-5 rounded-full hover:bg-blue-100 transition">
+                      <a href="Child-care.html">View</a>
+            </button>
+          </div>
+        </div>
 
-   <section id="pricing">
-    <h1 >Pricing</h1>
-    <p>Choose the plan that feets your needs.</p>
-  <div class="pricing-wrapper">
-    <div>
-      <h1 >Starter Plan</h1> 
-      <p class="price" data-usd="50 - 100" data-etb="5,000 - 10,000">$50 - 100</p>
-      <button  class="showIn">Show in ETB</button>
-      <p>Best For: <strong>Small Personal Websites</strong></p>
-      <h2>Includes</h2>
-      <p>Up to 5 pages</p>
-      <p>Basic SEO Setup</p>
-      <p>Simple Contact Form</p>
-      <h3><a href="#contact-me">Make a deal now</a></h3>
-    </div>
-    <div>
-      <h1>Business Plan</h1> 
-      <p class="price" data-usd="200 - 400" data-etb="20,000 - 40,000">$200 - 400</p><button onclick="showIn()"  class="showIn">Show in ETB</button>
-      <p>Best For: <strong>Small Business</strong></p>
-      <h2>Includes</h2>
-      <p>Up to 15 pages</p>
-      <p>Advanced SEO</p>
-      <p>Custom Design</p>
-      <p>Contact Form, Email and Goggle Maps Integration</p>
-      <h3><a href="#contact-me">Make a deal now</a></h3>
+          <div class="box relative w-full max-w-sm h-96 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+          <div 
+            class="absolute inset-0 bg-payease bg-contain bg-no-repeat bg-white bg-center transition-opacity duration-1000 group-hover:opacity-0">
+          </div>
 
-    </div>
-    <!-- <div>
+          <div class="absolute inset-0 bg-baseline bg-opacity-90 opacity-0 group-hover:opacity-100 transition duration-1000 flex flex-col items-center justify-center text-white text-center px-4">
+            <h2 class="text-2xl font-semibold mb-4 drop-shadow-md">Labor managmenet mini project</h2>
+            <button class="bg-white text-blue-700 font-bold py-2 px-5 rounded-full hover:bg-blue-100 transition">
+                      <a href="Child-care.html">View</a>
+            </button>
+          </div>
+        </div>
+
+        </div>
+      </section>
+
+      <section 
+      id="pricing" 
+      class="flex font-poppins bg-slate-50 mt-32 lg:mt-24 px-10 py-10 flex-col justify-around items-center gap-8 scroll-mt-32 max-nb:scroll-mt-80"
+      "> 
+        <h1 class="font-montserrat text-4xl max-sm:text-3xl font-bold">Pricing</h1>
+        <p class="text-md text-slate-gray">Choose the plan that feets your needs.</p>
+        <div class="pricing-wrapper px-8 max-md:px-2 flex flex-row items-center justify-center max-lg:flex-col gap-6 max-md:space-y-12 mt-12 cursor-pointer ">
+
+          <!-- starter plan -->
+
+          <div class="flex flex-col items-start border px-4 py-6 shadow-inner shadown-md rounded-lg max-w-sm w-full max-nav:h-[440.53px]">
+            <h1 class="font-montserrat text-2xl font-semibold mb-4 text-coral-red">Starter Plan</h1>
+            <p class="opacity-70 mb-4">Best For: <span class="font-semibold">Small Personal Websites</span></p>
+
+            <p class="price text-2xl font-semibold mb-4" data-usd="50 - 100" data-etb="5,000 - 10,000">
+              $50 - 100
+            </p>
+            <button class="showIn text-baseline mb-2">Show in ETB</button>
+            <button class="w-full p-2 cursor-pointer mb-4 hover:bg-emerald-300 transition-all duration-1000 bg-button rounded-lg rounded-tr-[2vh]"><a href="">GET STARTED</a></button>
+            <div class="flex flex-row gap-4 w-full border-b p-3">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>Up to 5 fully customized pages</p>
+            </div>
+            <div class="flex flex-row gap-4 border-b p-3 w-full">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>Basic SEO Setup</p>
+            </div>
+            <div class="flex flex-row gap-4 w-full border-b p-3">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>Simple Contact Form</p>
+            </div>
+      
+          </div>
+
+          <!--Buisness Plan-->
+
+          <div class="flex scale-105 flex-col items-start border px-4 py-6 shadow-inner shadown-md rounded-lg max-w-sm w-full max-nav:h-[440.53px]">
+            <h1 class="font-montserrat text-2xl font-semibold mb-4 text-teal-500">Business Plan</h1>
+            <p class="opacity-70 mb-4">Best For: <span class="font-semibold">Small Business</span></p>
+
+            <p class="price text-2xl font-semibold mb-4" data-usd="200 - 400" data-etb="20,000 - 40,000">
+              $200 - 400
+            </p>
+            <button class="showIn text-baseline mb-2">Show in ETB</button>
+            <button class="w-full p-2 cursor-pointer mb-4 hover:bg-emerald-300 transition-all duration-1000 bg-button rounded-lg rounded-tr-[2vh]"><a href="">GET STARTED</a></button>
+                 
+           <div class="flex flex-row gap-4 w-full border-b p-3">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>Up to 15 fully customized pages</p>
+            </div>
+            <div class="flex flex-row gap-4 border-b p-3 w-full">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>Advanced SEO Setup</p>
+            </div>
+
+            <div class="flex flex-row gap-4 border-b p-3 w-full">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>Contact Form, Email and Goggle Maps Integration</p>
+            </div>
+        
+          </div>
+          <!-- <div>
       <h1>Full Package</h1> 
       <p class="price">Vary</p>
       <p>Best For: <strong>E-commerce and others</strong></p>
@@ -228,98 +478,167 @@
       <p>Social Media Managment</p>
       <p>Face-Book Ad</p>
       <p>Full-Pack website</p> -->
-    <!-- </div> -->
-    <div>
-      <h1>Premium Plan</h1> 
-      <p class="price" data-usd="600 - 800" data-etb="60,000 - 80,000">$600 - 800</p><button onclick="showIn()"  class="showIn">Show in ETB</button>
-      <p>Best For: <strong>E-commerce and others</strong></p>
-      <h2>Includes</h2>
-      <p>Unlimited Pages</p>
-      <p>Full SEO optimization</p>
-      <p>E-Commerce Setup</p>
-      <p>Custom design and animation</p>
-      <p>Contact form, booking systems, and more</p>
-    <h3><a>Comming soon</a></h3>
+          <!-- </div> -->
 
-    </div>
-    
-  
-</section>
+          <!--Premium Plan-->
+          <div class="flex flex-col items-start border px-4 py-6 shadow-inner shadown-md rounded-lg max-w-sm w-full max-nav:h-[440.53px] mb-8">
+            <h1 class="font-montserrat text-2xl font-semibold mb-4 text-baseline">Premium Plan</h1>
+            <p class="opacity-70 mb-4">Best For: <span class="font-semibold">E-commerce and Others</span></p>
+            <p class="price text-2xl font-semibold mb-4" data-usd="600 - 800" data-etb="60,000 - 80,000">
+              $600 - 800
+            </p>
+            <button onclick="showIn()" class="showIn text-baseline mb-2">Show in ETB</button>
+            <button class="w-full p-2 cursor-pointer mb-4 hover:bg-emerald-300 transition-all duration-1000 bg-button rounded-lg rounded-tr-[2vh]"><a href="">GET STARTED</a></button>
 
+             <div class="flex flex-row gap-4 w-full border-b p-3">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>Unlimited Customized Pages</p>
+            </div>
+            <div class="flex flex-row gap-4 border-b p-3 w-full">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>E-Commerce Setup, Contact form, Booking systems, and more</p>
+            </div>
 
-   <!-- <section id="testimonial">
-    <p>Testimonial</p>
-    <h1>What Clients Say</h1>
-    <div>
-       <div></div>
+            <div class="flex flex-row gap-4 border-b p-3 w-full">
+              <img src="dist/icons/check.png" class="w-[25px] object-contain">
+              <p>Custom design and animation</p>
+            </div>
+
        
-    </div>
-    
-   </section> -->
-   <section id="contact-me">
-    <p>Drop me a line</p>
-    <h1>Get in Touch</h1>
-    <form id="form" class="grid">
-    <div>
-      <div>
-        <input type="text" id="name" name="name" placeholder="Name" required><br>
-      </div>
-      <div>
-        <input type="text" id="company" name="company" placeholder="Company"><br>
-      </div>
-<div>
-  <input type="email" id="email" name="email" placeholder="Email" required><br>
-</div>   
-<div>   
-  <input type="tel" id="phone" name="phone" placeholder="Phone"><br>
-</div> 
-<div>
-   <label for="">Service</label>
-    <select id="service" name="service">
-      <option value="Website">Website</option>
-      <option value="Social Media Managment">Social media managment</option>
-      <option value="Search Engine Optimization(SEO)">Seach Engine Optimization(SEO)</option>
-    </select>
-  </div>
-  <div>
-      <textarea id="message" name="message" placeholder="Drop a Message" required></textarea><br>
-    </div>
-      <button type="submit" id="button">Send <span></span></button>
-    </div>
-    <div>
-      <div><img src="dist/icons/mail.png">&nbsp; dagmawialebachew@gmail.com</div>
-      <div>  <img src="dist/icons/phone.png">&nbsp; <a class="phone" href="tel:+251960306801">+251960306801</a></div>
-      Whether you have a question about my services, pricing, or anything else feel free to ask.    <p>Choose the plan that feets your needs.</p>
 
-    </div>    
- 
-  </form>   
-   </section>
+          </div>
+          </div>
 
-   <footer>
-    <div>
-      --------<a href="https://t.me/DagiKylexy"><img src="dist/icons/telegram.png"></a>
-      <a href=""><img src="dist/icons/linkedin.png"></a>
-      <a href="https://www.instagram.com/dagikylexy/"><img src="dist/icons/instagram.png"></a>--------
+          </section>
+
+  <section 
+      id="contact-me" 
+      class="flex font-poppins bg-white mt-32 lg:mt-24 px-10 py-10 flex-col justify-around items-start gap-8 scroll-mt-32 max-nb:scroll-mt-80"
+      ">            
+      
+
+      <p class="text-slate-gray">Drop me a line</p>
+
+      <!--Right side-->
+            <h1 class="text-4xl font-montserrat max-sm:text-3xl font-semibold">Get in Touch</h1>
+            <form id="form" class="grid grid-cols-2 max-lg:grid-cols-1 w-full gap-10">
+              <div class="grid grid-cols-2 max-md:grid-cols-1 max-md:place-items-center gap-8  w-full max-lg:w-max max-nb:w-full ">
+                <div>
+                  <input
+                    type="text"
+                    class="border p-4 rounded-xl shadow-sm shadow-baseline focus:ring-1 focus:border-none focus:ring-coral-red w-[250px]"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  /><br />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="border p-4 rounded-xl shadow-sm shadow-baseline focus:ring-1 focus:border-none focus:ring-coral-red w-[250px]"
+                    id="company"
+                    name="company"
+                    placeholder="Company"
+                  /><br />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    class="border p-4 rounded-xl shadow-sm shadow-baseline focus:ring-1 focus:border-none focus:ring-coral-red w-[250px]"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  /><br />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    class="border p-4 rounded-xl shadow-sm shadow-baseline focus:ring-1 focus:border-none focus:ring-coral-red w-[250px]"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone"
+                  /><br />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="">Service</label>
+                  <select id="service" 
+                  class="border p-4 rounded-xl shadow-sm shadow-baseline focus:ring-1 focus:border-none focus:ring-coral-red w-[250px]"
+                  name="service">
+                    <option value="Website">Website</option>
+                    <option value="Social Media Managment">
+                      Social media managment
+                    </option>
+                    <option value="Search Engine Optimization(SEO)">
+                      Seach Engine Optimization(SEO)
+                    </option>
+                  </select>
+                </div>
+                <div>
+                  <textarea
+                    id="message"
+                    class="border p-4 rounded-xl shadow-sm shadow-baseline focus:ring-1 focus:border-none focus:ring-coral-red w-[250px]"
+                    name="message"
+                    placeholder="Drop a Message"
+                    required
+                  ></textarea
+                  ><br />
+                </div>
+                <button class="border w-48 bg-teal-300 px-3" type="submit" id="button">Send <span></span></button>
+              </div>
+
+              <!--Left Side-->
+              <div class="flex flex-col gap-8 max-nb:gap-4 border-l-2 border-l-baseline rounded-md px-3 ">
+                <div class="font-montserrat text-sm flex flex-col">
+                  <img src="dist/icons/mail.png" class="w-[40px]" />&nbsp;
+                  dagmawialebachew@gmail.com
+                </div>
+                <div class="font-montserrat text-sm flex flex-col font-bold">
+                  <img src="dist/icons/phone.png" class="w-[40px]" />&nbsp;
+                  <a class="phone" href="tel:+251960306801">+251960306801</a>
+                </div>
+                Whether you have a question about my services, pricing, or
+                anything else feel free to ask.
+                <p class="font-extralight">Choose the plan that feets your needs.</p>
+              </div>
+            </form>
+          </section>
+
+          <footer class="w-full flex flex-col mb-16 mt-16">
+            <div class="flex flex-row gap-6 justify-center items-center">
+              --------<a href="https://t.me/DagiKylexy"
+                ><img class="w-[30px]" src="dist/icons/telegram.png"
+              /></a>
+              <a href=""><img class="w-[30px]" src="dist/icons/linkedin.png" /></a>
+              <a href="https://www.instagram.com/dagikylexy/"
+                ><img class="w-[30px]" src="dist/icons/instagram.png" /></a
+              >--------
+            </div>
+            <div class="relative">
+              <p class="font-poppins text-center px-3 mt-4">Copyright © 2025 Dagmawi, All rights reserved.</p>
+              <a href="#top" class="absolute bottom-0 right-2"><img class="w-[30px]" src="dist/icons/go-to-top.png" /></a>
+            </div>
+          </footer>
+        </div>
+      
+      </section>
     </div>
-    <div>
-      <p>Copyright © 2024 Dagmawi, All rights reserved.</p>     
-      <a href="#home"><img src="dist/icons/go-to-top.png"></a> 
-    </div>
-   </footer>
-  </div>
-   <script type="text/javascript"
-   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
- <script type="text/javascript">
-   emailjs.init('DPXzDXy_D0kyxQVB2')
- </script>   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-   <script src="vendors/plugins/jquery-2.2.4.min.js"></script>
-   <script src="vendors/plugins/jquery.appear.min.js"></script>
-   <script src="vendors/plugins/jquery.easypiechart.min.js"></script>
-   <script src="dist/js/script.js"></script>
-   <script src="dist/js/pricing.js"></script>
-   <script src="dist/js/onload.js"></script>
-</body>
+
+      <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+          emailjs.init("DPXzDXy_D0kyxQVB2");
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="vendors/plugins/jquery-2.2.4.min.js"></script>
+        <script src="vendors/plugins/jquery.appear.min.js"></script>
+        <script src="vendors/plugins/jquery.easypiechart.min.js"></script>
+        <script src="dist/js/script.js"></script>
+        <script src="dist/js/pricing.js"></script>
+        <script src="dist/js/onload.js"></script>
+  </body>
 </html>
