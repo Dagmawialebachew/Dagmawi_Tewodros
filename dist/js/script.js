@@ -4,7 +4,7 @@ let progress = 0;
     progress += 1;
     progressBar.style.width = progress + "%";
     if (progress >= 100) clearInterval(interval);
-  }, 20); // Adjust speed
+  }, 100); // Adjust speed
 
     document.body.classList.add("overflow-hidden");
 
@@ -12,8 +12,7 @@ let progress = 0;
   // Finish loader and show content
   window.addEventListener("load", () => {
     setTimeout(() => {
-      document.getElementById("loader").classList.add("hidden");
-      document.getElementById("main-content").classList.remove("hidden");
+      
       document.body.classList.remove("overflow-hidden");
 
       triggerGsapFunction();
