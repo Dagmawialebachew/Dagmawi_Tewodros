@@ -1,6 +1,8 @@
 window.addEventListener('load', () => {
   document.getElementById('loader').classList.add('hidden');
   document.getElementById('main-content').classList.remove('hidden');
+   triggerGsapFunction();
+  progressBarAnimator();
 });
 
 
@@ -107,10 +109,6 @@ function toggleFun() {
 
   
 
-document.addEventListener("DOMContentLoaded", function () {
-  triggerGsapFunction();
-  progressBarAnimator();
-});
 
 
 
