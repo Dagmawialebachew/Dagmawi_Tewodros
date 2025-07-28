@@ -25,7 +25,7 @@ function triggerGsapFunction() {
       },
       x: -200,
       opacity: 0,
-      duration: 1.5
+      duration: 1
   });
   
   gsap.from('#my-service', {
