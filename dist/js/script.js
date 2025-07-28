@@ -1,10 +1,31 @@
-window.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('loader').classList.add('hidden');
-  document.getElementById('main-content').classList.remove('hidden');
+let progress = 0;
+  const progressBar = document.getElementById("progress-bar");
+  const interval = setInterval(() => {
+    progress += 1;
+    progressBar.style.width = progress + "%";
+    if (progress >= 100) clearInterval(interval);
+  }, 20); // Adjust speed
 
-   triggerGsapFunction();
-  progressBarAnimator();
-});
+    document.body.classList.add("overflow-hidden");
+
+
+  // Finish loader and show content
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("loader").classList.add("hidden");
+      document.getElementById("main-content").classList.remove("hidden");
+      document.body.classList.remove("overflow-hidden");
+
+      triggerGsapFunction();
+      progressBarAnimator();
+
+    }, 300); // slight delay for smooth transition
+  });
+
+  // Optional: block scroll during load
+
+
+
 
 
 
