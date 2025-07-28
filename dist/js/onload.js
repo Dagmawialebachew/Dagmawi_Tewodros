@@ -2,6 +2,8 @@
 
 function triggerGsapFunction() {
 
+  
+
 
   gsap.registerPlugin(ScrollTrigger);
   
@@ -23,7 +25,7 @@ function triggerGsapFunction() {
           start: 'top bottom',
           toggleActions: 'play none none none'
       },
-      x: -200,
+     
       opacity: 0,
       duration: 1
   });
