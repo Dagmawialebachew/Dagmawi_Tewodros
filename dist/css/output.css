@@ -674,6 +674,10 @@ video {
   z-index: 1000;
 }
 
+.z-\[10000\]{
+  z-index: 10000;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
