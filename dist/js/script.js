@@ -12,7 +12,8 @@ let progress = 0;
   // Finish loader and show content
   window.addEventListener("load", () => {
     setTimeout(() => {
-      
+      document.getElementById("loader").classList.add("hidden");
+      document.getElementById("main-content").classList.remove("hidden");
       document.body.classList.remove("overflow-hidden");
 
       triggerGsapFunction();
