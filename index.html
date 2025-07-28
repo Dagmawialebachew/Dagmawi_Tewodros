@@ -23,7 +23,14 @@
   <body id="body" class="bg-white overflow-x-hidden oveflow-y-auto font-poppins mx-auto scroll-smooth">
     
 
-    <div class="content-wrapper mt-10">
+  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+    <div class="text-center">
+      <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 mb-4"></div>
+      <p class="text-gray-700 text-lg">Loading...</p>
+    </div>
+  </div>
+
+    <div class="main-content mt-10">
       <header
         id="header"
         class="flex bg-white flex-row justify-between w-full items-center justify px-8 max-md:px-4 py-4 max-nb:fixed top-0 shadow-sm fixed z-[1000]"
@@ -207,7 +214,6 @@
               <a href="About.html">Read-more</a>
 </button>    
           </div>
-        </div>
       </section>
 
       <!-- My-service section -->
@@ -611,7 +617,7 @@
               --------<a href="https://t.me/DagiKylexy" target="_blank"
                 ><img class="w-[30px]" src="dist/icons/telegram.png"
               /></a>
-              <a href=""><img class="w-[30px]" src="dist/icons/linkedin.png" /></a>
+    <a href="www.linkedin.com/in/dagmaros" target="_blank"><img src="dist/icons/linkedin.png"></a>
               <a href="https://www.instagram.com/dagikylexy/" target="_blank"
                 ><img class="w-[30px]" src="dist/icons/instagram.png" /></a
               >--------
@@ -621,10 +627,11 @@
               <a href="#top" class="absolute bottom-0 right-2"><img class="w-[30px]" src="dist/icons/go-to-top.png" /></a>
             </div>
           </footer>
-        </div>
       
       </section>
-    </div>
+      </div>
+   
+
 
       <script
           type="text/javascript"

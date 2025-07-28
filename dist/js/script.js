@@ -107,3 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+window.addEventListener('load', () => {
+  document.getElementById('loader').classList.add('hidden');
+  document.getElementById('main-content').classList.remove('hidden');
+});
+
+
