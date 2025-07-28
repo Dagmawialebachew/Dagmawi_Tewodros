@@ -45,7 +45,7 @@ function triggerGsapFunction() {
   gsap.from('.box', {
       scrollTrigger: {
           trigger: '.box',
-          start: 'top 80%',
+          start: 'top 70%',
           toggleActions: 'play none none complete'
       },
       y: 100,
@@ -97,7 +97,7 @@ function triggerGsapFunction() {
   gsap.from('#project-managment', {
       scrollTrigger: {
           trigger: '#project-managment',
-          start: 'top 80%',
+          start: 'top 60%',
           toggleActions: 'play none none none'
       },
       y: -200,
