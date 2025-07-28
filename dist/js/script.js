@@ -1,3 +1,9 @@
+window.addEventListener('load', () => {
+  document.getElementById('loader').classList.add('hidden');
+});
+
+
+
 function openDocx() {
     var docUrl = 'https://docs.google.com/document/d/1G7T8jhqi6uJvUgy18EHXquNPkgAs9mpW/edit?usp=sharing&ouid=112830450550044639270&rtpof=true&sd=true';
     window.open(docUrl, '_blank');
@@ -106,10 +112,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-window.addEventListener('load', () => {
-  document.getElementById('loader').classList.add('hidden');
-  document.getElementById('main-content').classList.remove('hidden');
-});
 
 
