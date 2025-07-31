@@ -67,7 +67,7 @@ lazyMethod = document.getElementById('lazy')
 function show() {
      menuDiv.classList.toggle ('hidden')
      const isToggled = menuDiv.classList.contains('hidden')
-     dropDown.src = isToggled ? 'dist/icons/top.png' : 'dist/icons/menu.png'
+     dropDown.src = isToggled ? 'dist/icons/top.webp' : 'dist/icons/menu.webp'
 }
 
 function toggleFun() {
@@ -78,7 +78,7 @@ function toggleFun() {
   lazyMethod.style.display = 'flex'
 
   const isVisible = !nav.classList.contains('max-nb:hidden');
-  toggle.src = isVisible ? 'dist/icons/slider.png' : 'dist/icons/toggle.png'
+  toggle.src = isVisible ? 'dist/icons/slider.webp' : 'dist/icons/toggle.webp'
 
 
     

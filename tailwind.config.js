@@ -69,12 +69,12 @@ module.exports = {
     },
 
       backgroundImage: {
-          hotel: "url('images/ambaras-hotel.png')",
-          educational: "url('images/Learniverse.jpg')",
-          ev_2: "url('images/ev-2.jpeg')",
-          child_care: "url('images/child-care.jpeg')",
+          hotel: "url('images/ambaras-hotel.webp')",
+          educational: "url('images/Learniverse.webp')",
+          ev_2: "url('images/ev-2.webp')",
+          child_care: "url('images/child-care.webp')",
           gymnify: "url('images/Gymnify.svg')",
-          payease: "url('images/payease.png')"
+          payease: "url('images/payease.webp')"
         },
 
 
