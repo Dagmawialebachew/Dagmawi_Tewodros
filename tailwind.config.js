@@ -51,6 +51,7 @@ module.exports = {
         "stroke": "#00B087",
         "active-text" : "008767",
         "baseline": "#1e8fff",
+        'fitness': "#0bd9cc"
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
@@ -69,7 +70,7 @@ module.exports = {
     },
 
       backgroundImage: {
-          hotel: "url('images/ambaras-hotel.webp')",
+          hotel: "url('images/fitnesshub.webp')",
           educational: "url('images/Learniverse.webp')",
           ev_2: "url('images/Tracker.png')",
           child_care: "url('images/icon-192.png')",

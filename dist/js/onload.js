@@ -1,162 +1,160 @@
-//  ---------------------------------------------Trigger The Gsap Animation----------------------------------------//
+// --------------------------------------------- Trigger The GSAP Animations --------------------------------------------- //
 
 function triggerGsapFunction() {
-
-  
-
-
   gsap.registerPlugin(ScrollTrigger);
-  
+
+  // ===== HOME SECTION =====
   gsap.from('.slide-in-right', {
-      scrollTrigger: {
-          trigger: '#home',
-          start: 'top bottom',
-          toggleActions: 'play none none complete'
-      },
-      opacity: 0,
-      x: 200,
-      duration: 3
-  });
-  
-  
-  gsap.from('.slide-in-left, .logo', {
-      scrollTrigger: {
-          trigger: '#home',
-          start: 'top bottom',
-          toggleActions: 'play none none none'
-      },
-     
-      opacity: 0,
-      duration: 1
-  });
-  
-  gsap.from('#my-service', {
-      scrollTrigger: {
-          trigger: '#my-service',
-          start: 'top 80%',
-          toggleActions: 'play none none complete'
-      },
-      opacity: 0,
-      duration: 2,
-      scale:0.8,
-      stagger: 0.3,
-  });
-  
-  gsap.from('.box', {
-      scrollTrigger: {
-          trigger: '.box',
-          start: 'top 70%',
-          toggleActions: 'play none none complete'
-      },
-      y: 100,
-      opacity: 0,
-      duration: 2,
-      stagger: 0.3,
+    scrollTrigger: {
+      trigger: '#home',
+      start: 'top bottom',
+      toggleActions: 'play none none complete'
+    },
+    opacity: 0,
+    x: 200,
+    duration: 1.5,
+    ease: 'power3.out'
   });
 
-
-   gsap.from('#about h1', {
-      scrollTrigger: {
-          trigger: '#about h1',
-          start: 'top 80%',
-          toggleActions: 'play none none complete'
-      },
-      x: -100,
-      opacity: 0,
-      duration: 2,
-      stagger: 0.3,
+  gsap.from(['.slide-in-left', '.logo'], {
+    scrollTrigger: {
+      trigger: '#home',
+      start: 'top bottom'
+    },
+    opacity: 0,
+    duration: 1.2,
+    ease: 'power3.out'
   });
 
-   gsap.from('#about p, #about button', {
-      scrollTrigger: {
-          trigger: '#about p',
-          start: 'top 80%',
-          toggleActions: 'play none none complete'
-      },
-      x: 0,
-      opacity: 0,
-      duration: 2,
-      stagger: 0.3,
-  });
-  
   gsap.from('#home p, #home h1, #home button', {
-      scrollTrigger: {
-          trigger: '#home',
-          start: 'top 80%',
-          toggleActions: 'play none none complete.'
-      },
-      x: 0,
-      opacity: 0,
-      duration: 1.5,
-      stagger: 0.5
+    scrollTrigger: {
+      trigger: '#home',
+      start: 'top 80%'
+    },
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    stagger: 0.3,
+    ease: 'power2.out'
   });
 
+  // ===== SERVICES SECTION =====
+  gsap.from('#my-service', {
+    scrollTrigger: {
+      trigger: '#my-service',
+      start: 'top 80%'
+    },
+    opacity: 0,
+    scale: 0.8,
+    duration: 1.5,
+    ease: 'power2.out'
+  });
 
+  // ===== PROJECT CARDS (Diagonal Wave) =====
+  gsap.utils.toArray('.box').forEach((card, i) => {
+    gsap.from(card, {
+      scrollTrigger: {
+        trigger: card,
+        start: 'top 85%',
+        toggleActions: 'play none none complete'
+      },
+      y: 80,
+      opacity: 0,
+      scale: 0.95,
+      duration: 1.2,
+      ease: 'power3.out',
+      delay: (i % 3) * 0.15 + Math.floor(i / 3) * 0.15 // diagonal wave effect
+    });
+  });
 
-  
+  // ===== ABOUT SECTION =====
+  gsap.from('#about h1', {
+    scrollTrigger: {
+      trigger: '#about h1',
+      start: 'top 80%'
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1.5,
+    ease: 'power3.out'
+  });
+
+  gsap.from('#about p, #about button', {
+    scrollTrigger: {
+      trigger: '#about p',
+      start: 'top 80%'
+    },
+    opacity: 0,
+    y: 30,
+    duration: 1.2,
+    stagger: 0.2,
+    ease: 'power2.out'
+  });
+
+  // ===== PROJECT MANAGEMENT SECTION =====
   gsap.from('#project-managment', {
-      scrollTrigger: {
-          trigger: '#project-managment',
-          start: 'top 60%',
-          toggleActions: 'play none none none'
-      },
-      y: -200,
-      opacity: 0,
-      duration: 1.5
+    scrollTrigger: {
+      trigger: '#project-managment',
+      start: 'top 60%'
+    },
+    y: -200,
+    opacity: 0,
+    duration: 1.5,
+    ease: 'power3.out'
   });
-  
+
+  // ===== CONTACT FORM =====
   gsap.from('#form > div:nth-child(2)', {
-      scrollTrigger: {
-          trigger: '#contact-me',
-          start: 'top 80%',
-          toggleActions: 'play none none none'
-      },
-      y: -200,
-      opacity: 0,
-      duration: 3,
-      stagger: 0.3
+    scrollTrigger: {
+      trigger: '#contact-me',
+      start: 'top 80%'
+    },
+    y: -200,
+    opacity: 0,
+    duration: 1.5,
+    stagger: 0.3,
+    ease: 'power2.out'
   });
-  
+
+  // ===== PRICING SECTION =====
   gsap.from('#pricing div', {
+    scrollTrigger: {
+      trigger: '#pricing div',
+      start: 'top 80%'
+    },
+    scale: 0.7,
+    opacity: 0,
+    duration: 1.2,
+    stagger: 0.2,
+    ease: 'power3.out'
+  });
+
+  // ===== TEXT FADE-INS =====
+  gsap.utils.toArray('#My-projects p, #pricing p:nth-of-type(1)').forEach(el => {
+    gsap.from(el, {
       scrollTrigger: {
-          trigger: '#pricing div',
-          start: 'top 80%',
-          toggleActions: 'play none none none'
+        trigger: el,
+        start: 'top 80%'
       },
-      scale: 0.7,
       opacity: 0,
-      duration: 1.5,
-      stagger: 0.2
+      duration: 1.2,
+      ease: 'power1.out'
+    });
   });
-  
-  gsap.utils.toArray('#My-projects p, #pricing p:nth-of-type(1)').forEach(element => {
-      gsap.from(element, {
-          scrollTrigger: {
-              trigger: element,
-              start: 'top 80%',
-              toggleActions: 'play none none none'
-          },
-          opacity: 0,
-          duration: 8
-      });
-  });
-  
-  gsap.utils.toArray('section:not(#home, #about, #project-managment) h1').forEach(element => {
-      gsap.from(element, {
-          scrollTrigger: {
-              trigger: element,
-              start: 'top 80%',
-              toggleActions: 'play none none none'
-          },
-          y: 50,
-          opacity: 0,
-          duration: 1.5,
-          stagger: 0.2
-      });
-  });
-  
 
-
+  // ===== SECTION HEADINGS =====
+  gsap.utils.toArray('section:not(#home, #about, #project-managment) h1').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 80%'
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1.2,
+      ease: 'power2.out'
+    });
+  });
 }
 
 function progressBarAnimator() {
