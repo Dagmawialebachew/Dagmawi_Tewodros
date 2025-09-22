@@ -181,86 +181,118 @@
             src="dist/images/personal-image.webp"
           />
         </div>
+
+         <a
+    href="#My-projects"
+    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white"
+    aria-label="Scroll to projects"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
       </section>
 
       <!-- About me  -->
 
-      <section
-        id="about"
-        class="flex bg-white mt-32 lg:mt-24 px-10 py-10 flex-col gap-16 scroll-mt-32 max-nb:scroll-mt-80"
-      >
-        <div class="abt-me-sec">
-          <h1 class="text-4xl max-sm:text-3xl  relative  font-montserrat font-semibold z-0">
-            About
-            <span class="font-kanit font-bold text-baseline"
-
-              >Me</span
-            >
-          </h1>
-
-          </div>
-
-          <div>
-          <p class="text-balance" style="line-height: 1.6em;">
-            I'm an aspiring software engineer from Ethiopia with a deep passion
-            and curiosity for the world of technology. <br>My dedication,
-            consistency, and perseverance drive me toward my dreams. I have
-            secured various awards and grants due to my strengths and adherence
-            to the principle of "working smart not working harder".
-            <br>
-            I specialize in creating captivating, user-friendly, and problem
-            solving websites. As an innovative solution maker, I have built some
-            websites that address the current issues.
-          </p>
-
-          </div>
-          <div>      
-            <button class="bg-button read-more w-[250px] ">            
-              <a href="About.html">Read-more</a>
-</button>    
-          </div>
-      </section>
+    <section
+  id="about"
+  class="bg-white pt-20 pb-20 px-6 scroll-mt-32"
+>
+  <div class="container mx-auto max-w-4xl slide-in-up space-y-8 text-center">
+    <h2 class="text-4xl font-montserrat font-bold">
+      <span class="text-[#00e2ff]">About</span>
+      <span class="text-[#efb161]">Me</span>
+    </h2>
+    <p class="text-lg leading-relaxed text-slate-700">
+      I’m an aspiring software engineer from Ethiopia with a deep passion
+      for technology. My dedication and perseverance drive me to “work smart,
+      not hard.” I build captivating, user-friendly websites that solve real
+      problems and elevate user experiences.
+    </p>
+    <a
+      href="About.html"
+      class="inline-block bg-[#efb161] hover:bg-[#d89b50] text-white font-semibold
+             px-6 py-3 rounded-xl transition"
+    >
+      Read More
+    </a>
+  </div>
+</section>
 
       <!-- My-service section -->
 
      
-  <section
-        id="my-service" 
-        class="  mt-32 lg:mt-24 bg-gray-50 px-10 py-10 flex-row justify-between max-md:flex-col max-md:gap-16 scroll-mt-32 max-nb:scroll-mt-80"
-      >        <h1 class="text-4xl max-sm:text-3xl text-start mb-8 font-bold">
-          <span class="text-teal-500">Services </span
-          ><span class="text-coral-red">I offer</span>
-        </h1>
+  <!-- ==================== SERVICES SECTION ==================== -->
+<section
+  id="my-service"
+  class="bg-gray-50 pt-20 pb-20 px-6 scroll-mt-32"
+>
+  <div class="container mx-auto max-w-5xl space-y-12">
+    <h2 class="text-4xl font-bold slide-in-up text-center">
+      <span class="text-teal-500">Services</span>
+      <span class="text-coral-red"> I Offer</span>
+    </h2>
 
-        <div class="div-service mb-10 grid grid-cols-3 max-md:grid-cols-1 place-content-center place-items-center items-center gap-6">
-          <div class="div-services flex flex-col items-center justify-center  bg-[#7cffff36] shadow-md max-w-[385px] p-6 cursor-pointer hover:scale-105 transition-all duration-500 rounded-xl border-coral-red border max-h-fit">
-            <img loading="lazy" alt="Image - Web Development" class="max-w-[100px] font-poppins text-lg" src="dist/icons/web-development-new.webp"/>
-            <h2 class="text-lg font-bold mb-2 font-montserrat">Web Development</h2>
-            <p>
-              I develop websites that look great and function properly on all
-              devices, ensuring user experience whether audience is on a
-              desktop, tablet, or smartphone.
-            </p>
-          </div>
-          <div class="div-services flex flex-col items-center justify-center  bg-[#7cffff36] shadow-md max-w-[385px] p-6 cursor-pointer hover:scale-105 transition-all duration-500 rounded-xl border-coral-red border max-h-fit">
-            <img loading="lazy" alt="Image - Seo Optimization" class="max-w-[100px] font-poppins text-lg" src="dist/icons/seo-new.webp"/>
-            <h2 class="text-lg font-bold mb-2 font-montserrat">SEO Optimization</h2>
-            <p>
-              I implement best practices for search engine optimization (SEO) to
-              help website rank higher in search results, attract more visitors,
-              and increase online visibility.
-            </p>
-          </div>
-          <div class="div-services flex flex-col items-center justify-center  bg-[#7cffff36] shadow-md max-w-[385px] p-6 cursor-pointer hover:scale-105 transition-all duration-500 rounded-xl border-coral-red border max-h-fit">
-            <img loading="lazy" class="max-w-[100px]" src="dist/icons/django.webp" />
-            <h2 class="text-lg font-bold mb-2 font-montserrat">Full-Stack Developer</h2>
-            <p>
-              I build systems that revolutionize outdated processes using Django, ensuring seamless functionality across devicesand modern digital platforms.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
+      <!-- Web Development -->
+      <div
+        class="slide-in-up bg-white rounded-2xl p-8 shadow-lg border border-coral-red
+               hover:shadow-xl hover:scale-105 transition cursor-pointer text-center"
+      >
+        <img
+          src="dist/icons/web-development-new.webp"
+          alt="Web Development icon"
+          class="w-20 mb-4 mx-auto"
+          loading="lazy"
+        />
+        <h3 class="text-xl font-montserrat font-semibold mb-2">Web Development</h3>
+        <p class="text-slate-600">
+          I create responsive, performant websites that look great and work
+          seamlessly across all devices.
+        </p>
+      </div>
 
+      <!-- SEO Optimization -->
+      <div
+        class="slide-in-up bg-white rounded-2xl p-8 shadow-lg border border-coral-red
+               hover:shadow-xl hover:scale-105 transition cursor-pointer text-center"
+      >
+        <img
+          src="dist/icons/seo-new.webp"
+          alt="SEO Optimization icon"
+          class="w-20 mb-4 mx-auto"
+          loading="lazy"
+        />
+        <h3 class="text-xl font-montserrat font-semibold mb-2">SEO Optimization</h3>
+        <p class="text-slate-600">
+          I implement best practices to boost rankings, drive traffic,
+          and increase your online visibility.
+        </p>
+      </div>
+
+      <!-- Full-Stack Development -->
+      <div
+        class="slide-in-up bg-white rounded-2xl p-8 shadow-lg border border-coral-red
+               hover:shadow-xl hover:scale-105 transition cursor-pointer text-center"
+      >
+        <img
+          src="dist/icons/django.webp"
+          alt="Full-Stack Developer icon"
+          class="w-20 mb-4 mx-auto"
+          loading="lazy"
+        />
+        <h3 class="text-xl font-montserrat font-semibold mb-2">Full-Stack Dev</h3>
+        <p class="text-slate-600">
+          Using Django and modern front-end tools, I build end-to-end solutions
+          that streamline business workflows.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
   <section
         id="project-managment"
         class=" mt-32 lg:mt-24 px-10 bg-gray-100 py-10 max-md:flex-col scroll-mt-32 max-nb:scroll-mt-80"
